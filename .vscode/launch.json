@@ -1,0 +1,98 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CalculoOverUnderNBA",
+            "request": "launch",
+            "mainClass": "CalculoOverUnderNBA",
+            "projectName": "Java_12268c15"
+        },
+        {
+            "type": "java",
+            "name": "TabuadaSwing",
+            "request": "launch",
+            "mainClass": "TabuadaSwing",
+            "projectName": "Java_12268c15"
+        },
+        {
+            "type": "java",
+            "name": "Tabuada",
+            "request": "launch",
+            "mainClass": "Tabuada",
+            "projectName": "Java_12268c15"
+        },
+        {
+            "type": "java",
+            "name": "hello",
+            "request": "launch",
+            "mainClass": "hello",
+            "projectName": "Java_12268c15"
+        },
+        {
+            "type": "java",
+            "name": "TesteJSwing",
+            "request": "launch",
+            "mainClass": "TesteJSwing",
+            "projectName": "Java_12268c15"
+        },
+        {
+            "type": "java",
+            "name": "teste",
+            "request": "launch",
+            "mainClass": "teste",
+            "projectName": "Java_12268c15"
+        },
+        {
+            "type": "java",
+            "name": "VetorDezEmDez",
+            "request": "launch",
+            "mainClass": "VetorDezEmDez",
+            "projectName": "Java_12268c15"
+        },
+        {
+            "type": "java",
+            "name": "Imp",
+            "request": "launch",
+            "mainClass": "Imp",
+            "projectName": "Java_12268c15"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "ContadorFor",
+            "request": "launch",
+            "mainClass": "ContadorFor",
+            "projectName": "Java_12268c15"
+        },
+        {
+            "type": "java",
+            "name": "ContadorWhile",
+            "request": "launch",
+            "mainClass": "ContadorWhile",
+            "projectName": "Java_12268c15"
+        },
+        {
+            "type": "java",
+            "name": "Escolha",
+            "request": "launch",
+            "mainClass": "Escolha",
+            "projectName": "Java_12268c15"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Main",
+            "projectName": "Java_12268c15"
+        }
+    ]
+}
