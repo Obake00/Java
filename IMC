@@ -1,0 +1,75 @@
+import javax.swing.*;
+import java.awt.*;
+
+public class CalculoIMC extends JFrame {
+
+    public CalculoIMC() {
+        setTitle("Cálculo IMC");
+        setSize(350, 250);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setLocationRelativeTo(null);
+
+        JPanel painel = new JPanel();
+        painel.setLayout(new GridLayout(4, 1));
+
+        JLabel titulo = new JLabel("=-= Cálculo IMC =-=", SwingConstants.CENTER);
+        titulo.setForeground(Color.BLUE);
+        titulo.setFont(new Font("Arial", Font.BOLD, 16));
+
+        painel.add(titulo);
+
+        try {
+            double altura = Double.parseDouble(
+                    JOptionPane.showInputDialog("Insira sua altura (ex: 1.75):")
+            );
+
+            double peso = Double.parseDouble(
+                    JOptionPane.showInputDialog("Insira seu peso (ex: 70):")
+            );
+
+            double imc = peso / Math.pow(altura, 2);
+
+            JLabel resultadoIMC = new JLabel(
+                    String.format("Seu IMC é: %.1f", imc),
+                    SwingConstants.CENTER
+            );
+
+            JLabel classificacao = new JLabel("", SwingConstants.CENTER);
+
+            if (imc < 18.5) {
+                classificacao.setText("Você está abaixo do peso!");
+                classificacao.setForeground(Color.BLUE);
+            } else if (imc <= 25) {
+                classificacao.setText("Você está no peso ideal!");
+                classificacao.setForeground(Color.GREEN);
+            } else if (imc <= 30) {
+                classificacao.setText("Cuidado! Sobrepeso!");
+                classificacao.setForeground(Color.ORANGE);
+            } else if (imc <= 40) {
+                classificacao.setText("Obesidade!");
+                classificacao.setForeground(Color.MAGENTA);
+            } else {
+                classificacao.setText("Obesidade mórbida!");
+                classificacao.setForeground(Color.RED);
+            }
+
+            painel.add(resultadoIMC);
+            painel.add(classificacao);
+
+        } catch (NumberFormatException e) {
+            JOptionPane.showMessageDialog(
+                    this,
+                    "Erro: insira valores numéricos válidos.",
+                    "Erro",
+                    JOptionPane.ERROR_MESSAGE
+            );
+        }
+
+        add(painel);
+        setVisible(true);
+    }
+
+    public static void main(String[] args) {
+        SwingUtilities.invokeLater(CalculoIMC::new);
+    }
+}
